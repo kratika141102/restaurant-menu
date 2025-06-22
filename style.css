@@ -1,0 +1,189 @@
+ {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+body {
+  line-height: 1.9;
+  color: #f0e9e9;
+  background: #0f0000;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+h1 {
+  font-size: 66px;
+}
+h2 {
+  font-size: 58px;
+}
+p, table, .menu-table {
+  font-size: 44px;
+  font-style: normal;
+}
+
+/* === Header === */
+header {
+  background: #110101;
+  color: #faf0f0;
+  padding: 20px 0;
+}
+.container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.branding {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.logo-image {
+  width: 130px;
+  margin-top: 130px;
+  border-radius: 20px;
+}
+
+/* === Navigation === */
+nav {
+  font-size: 40px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+nav a {
+  font-weight: bold;
+  color: #f9f7f7;
+}
+
+/* === Hero Section === */
+.hero {
+  background: url('restaurant.jpg') center/cover no-repeat;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #f4ecec;
+  text-shadow: 1px 1px 4px #e1d5d5;
+  text-align: center;
+  padding: 30px;
+}
+
+/* === Sections === */
+section {
+  padding: 30px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+.menu-items, .gallery {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.item, .gallery img {
+  flex: 1 1 250px;
+  max-width: 100%;
+}
+.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* === Menu Table === */
+.menu-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2em;
+  text-align: left;
+}
+.menu-table th, .menu-table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #e8dddd;
+}
+.menu-table th {
+  background-color: transparent;
+  font-weight: bold;
+}
+.menu-table tr:hover {
+  background-color: #f0f8ff;
+}
+.menu-img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* === Footer === */
+footer {
+  background: #160000;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* === Scroll Reveal === */
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease-out;
+}
+.scroll-reveal.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* === Responsive Design === */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+    justify-content: flex-start;
+  }
+  .hero {
+    height: auto;
+    padding: 60px 20px;
+  }
+  .menu-items, .gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+  .item {
+    width: 90%;
+    text-align: center;
+  }
+}
+.hero p{
+    font-size: 36px;
+    font-weight: 500;
+}
+.menu-table td:nth-child(2){
+    font-size: 54px;
+    font-weight: bold;
+}
+.menu-table td:nth-child(3){
+    font-size: 44px;
+    font-weight: 600s;
+}
+.menu-table td:nth-child(2){
+    font-size: 44px;
+    font-weight: bold;}
