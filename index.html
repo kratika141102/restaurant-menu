@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jaini Food</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+    <div class="branding">
+      <h1>JAINI FOOD</h1>
+      <img src="images/food.jpg"alt="Jaini food logo"class="logo-images"/>
+     </div>
+      <nav>
+        <ul>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h2>Welcome to Jaini Food</h2>
+    <p>Delicious meals made with love.</p>
+  </section>
+
+  <!-- Menu -->
+  <section id="menu" class="menu-section scroll-reveal">
+    <h2>Our Menu</h2>
+    <table class="menu-table">
+      <thead>
+        <tr>
+        <th>Image</th>
+        <th>Item</th>
+        <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+        <td><img src="images/idli-sambhar.jpg" alt="Idli Sambhar" width="100" /></td>
+        <td>Idli Sambhar</td>
+        <td>$70.00</td>
+        </tr>
+        <tr>
+          <td><img src="images/pasta.jpg" alt="Pasta" width="100" /></td>
+          <td>Pasta</td>
+          <td>$110.99</td>
+        </tr>
+        <tr>
+          <td><img src="images/burger.jpeg" alt="Burger" width="100" /></td>
+          <td>Burger</td>
+          <td>$60.00</td>
+        </tr>
+        <td><img src="images/masala dosa.jpg" alt="Masala Dosa" width="100" /></td>
+          <td>Masala Dosa</td>
+          <td>$80.00</td>
+        </tr>
+        <td><img src="images/manchurian.jpg" alt="Masala Dosa" width="100" /></td>
+          <td>manchurian</td>
+          <td>$90.00</td>
+        </tr><td><img src="images/noodles.jpg" alt="Masala Dosa" width="100" /></td>
+          <td>noodles</td>
+          <td>$80.00</td>
+        </tr><td><img src="images/sandwich.jpg" alt="Masala Dosa" width="100" /></td>
+          <td>sandwich</td>
+          <td>$60.00</td>
+        </tr>
+        <td><img src="images/chai.jpg" alt="Masala Dosa" width="100" /></td>
+          <td>chai</td>
+          <td>$20.00</td>
+        </tr>
+        <td><img src="images/Cold-Coffee.jpg" alt="cold coffe" width="100" /></td>
+          <td>cold coffee</td>
+          <td>$140.00</td>
+        </tr>
+        <td><img src="images/french-fries.jpg" alt="Masala Dosa" width="100" /></td>
+          <td>french fries</td>
+          <td>$1700.00</td>
+        </tr>
+        <td><img src="images/waffles.jpg" alt="Masala Dosa" width="100" /></td>
+          <td>waffle</td>
+          <td>$40.00</td>
+        </tr>
+        <td><img src="images/pizza.jpg" alt="Masala Dosa" width="100" /></td>
+          <td>pizza</td>
+          <td>$210.00</td>
+        </tr>
+        <td><img src="images/Pav-bhaji.jpg" alt="Masala Dosa" width="100" /></td>
+          <td>pav bhaji</td>
+          <td>$80.00</td>
+        </tr>
+        <td><img src="images/garlic bread.jpg" alt="Masala Dosa" width="100" /></td>
+          <td>garlic bread</td>
+          <td>$70.00</td>
+       
+      </tbody>
+    </table>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="about-section scroll-reveal">
+    <h2>About Us</h2>
+    <p>Founded in 2018, Jaini Food is a family-owned restaurant known for quality ingredients and cozy atmosphere.</p>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="gallery-section scroll-reveal">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="images/pasta.jpg" alt="Food 1" width="100" />
+      <img src="images/burger.jpeg" alt="Food 2" width="200" />
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact-section scroll-reveal">
+    <h2>Contact Us</h2>
+    <p>Rewas Devra Road, Opp. CTC Turf Ramtekri, Mandsaur</p>
+    <p>Email: jainifood3@gmail.com</p>
+    <p>Open Daily: 1:30 PM – 10:30 PM</p>
+    <p>Mobile No: 9893111835</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Jaini Food</p>
+  </footer>
+
+  <!-- Scroll effect JS -->
+  <script>
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    });
+    document.querySelectorAll('.scroll-reveal').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>
